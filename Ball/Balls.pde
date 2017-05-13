@@ -1,3 +1,8 @@
+// Alison Lee, Thomas Lin
+// APCS2 pd4
+// HW40 -- All That Bouncin'
+// 2017-05-12
+
 int numBalls = 10;
 Ball[] balls = new Ball[numBalls];
 
