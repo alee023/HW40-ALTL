@@ -76,12 +76,11 @@ class Ball {
       d = 0 ;
     }
   }
-  
+
   boolean isTouching( Ball other ) {
-    if( state == 0 && ( other.state == 1 ) || other.state == 2 ) {
+    if ( state == 0 && ( other.state == 1 ) || other.state == 2 ) {
       return(( d/2 + other.d/2 ) > ( dist( other.x, other.y, x, y ) )) ;
     }
     return false ;
   }
-  
 }

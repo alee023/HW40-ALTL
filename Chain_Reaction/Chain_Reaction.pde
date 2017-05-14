@@ -17,13 +17,13 @@ void setup() {
 
 void draw() {
   background(0);
-  for( Ball n : balls ) {
+  for ( Ball n : balls ) {
     // ellipse( n.x, n.y, n.d, n.d ) ;
     // stroke( n.c ) ;
     // fill( n.c ) ;
     // n.move() ;
-    for( Ball i : balls ) {
-      if( n.state == 0 && n.isTouching( i )) {
+    for ( Ball i : balls ) {
+      if ( n.state == 0 && n.isTouching( i )) {
         n.state = 1 ;
         i.state = 1 ;
       }
@@ -33,7 +33,7 @@ void draw() {
 }
 
 void mouseClicked() {
-  if( !reaction ) { // clicking AGAIN has no effect
+  if ( !reaction ) { // clicking AGAIN has no effect
     balls[ 0 ].x = mouseX ;
     balls[ 0 ].y = mouseY ;
     // state of ball clicked is set to expanding
